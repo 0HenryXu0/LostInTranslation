@@ -8,15 +8,9 @@ to select a country, pick a language, and immediately see the translation.
 
 Currently, the program is only partially complete, but we have left TODOs
 indicating what is left to be implemented. Today, your team's task is to
-get it working and demonstrate that it works.
+get it working and demonstrate that it works (see the example demo later
+in this readme).
 
----
-
-## Requirements:
-To receive credit for today's team activity, your team must:
-- **demo your working code to your TA**
-  - full marks if the program demonstrates full functionality (see demo later in the readme)
-  - no marks if the program is clearly incomplete
 ---
 
 - [ ] **To get started, have one member of your team make a fork of this
@@ -27,31 +21,13 @@ during the lab.**
 ---
 
 ## Part 1: Maven Project
-Build systems are used to help programmers more easily
+As you have learned, build systems are used to help programmers more easily
 compile, run, and test their programs. In this lab, we'll be using Maven to
-organize and build our program.
+organize and build our program. In particular, we will seeing how to use Maven to manage
+the dependencies of our project.
 
-### Project Structure
-Take a second to get familiar with how this project is structured. Maven projects
-are structured in a specific way, which isn't too different from what we have seen so far:
-- `pom.xml`: the Project Object Model (POM) xml file which contains the project configuration
-  (IntelliJ automatically detects this file and runs maven commands to build the project for us)
-- `src/main/java`: directory containing the source files for our project
-  (note that it is automatically marked as the Sources Root)
-- `src/main/resources`: directory containing any resource files our project needs
-- `src/test/java`: directory containing the test files for our project
-  (note that it is automatically marked as the Test Sources Root)
-
-> Note: sometimes you may need to right-click the `pom.xml` file and select `Maven -> Reload project' if you 
-> don't see the sources root folders marked automatically.
-
-> For those interested, you can read the Maven documentation to learn about the `mvn` commands
-> (like Git, Maven has a command line interface!)
-> but for our purposes you can use the IntelliJ interface to run and test your code as you have been doing. 
-> See the Quercus page for this lab for links to additional resources.
-
-#### Managing Dependencies
-The main reason we want to introduce Maven today is that we'll be using an
+### Managing Dependencies
+The main reason we want to talk more about Maven today is that we'll be using an
 external library to help us read JSON data. The `pom.xml` file allows us to specify
 what external dependencies our project requires. If you open
 `pom.xml`, you will see a section like below. It indicates that our project depends
@@ -97,6 +73,8 @@ using a different build system, such as Gradle.
 Take a second to ensure that you are able to run everything that you need to in the project.
 
 - Confirm that you can run `GUI.java`.
+
+> Note: You may need to set your project SDK.
 
 - Confirm that you can run the tests by right-clicking the `src/test/java` folder and selecting "Run 'All Tests'".
   No tests will initially pass, but they will by the end of this lab.
@@ -186,8 +164,8 @@ to the two new languages that were implemented!
 These three sets of TODO tasks relate to the actual translation, converting
 language codes, and converting country codes.
 
-- [ ] **Divide up these three tasks across your team and complete them. We recommend working in pairs for these tasks, with each pair making
-  a PR, but you can also subdivide these tasks.**
+- [ ] **Divide up these three tasks across your team and complete them. As needed,
+  you can work in pairs or further subdivide these tasks.**
 
 > Once these are implemented, the provided tests should all pass.
 
@@ -218,7 +196,7 @@ another pair gets the `JList` of country names added.
 > to use `JList` for the country names and languages that would be fine too.
 
 ## Demo
- - [ ] **Once your team's code is fully functional,
+ - [ ] **Once your team's code is fully functional, you can
 demo your program to your TA to verify that your team has completed this lab activity.**
 
 ---
